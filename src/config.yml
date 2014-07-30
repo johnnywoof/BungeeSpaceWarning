@@ -1,0 +1,14 @@
+#If the remaining space on the drive is less than or equal to this number in megabytes, the warning will fire.
+#             ||
+#10 Gigabytes \/
+space-left: 10240
+
+#------Events------
+#Shut down the server when triggered?
+shutdown: false
+
+#Send a message to everyone with the spacewarning.notify permission about the remaining space?
+warn-players: true
+
+#How many seconds between each check to check the drive space
+check-interval: 60
