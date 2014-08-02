@@ -20,7 +20,7 @@ public class CheckRunnable implements Runnable{
 				
 				for(ProxiedPlayer p : ProxyServer.getInstance().getPlayers()){
 					
-					if(p.hasPermission("spacewarning.notify")){
+					if(p.hasPermission("bungeespacewarning.notify")){
 						
 						if(!Value.silents.contains(p.getUniqueId())){
 						

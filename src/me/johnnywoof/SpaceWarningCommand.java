@@ -11,7 +11,7 @@ public class SpaceWarningCommand extends Command{
 	private SpaceWarning sw;
 	
 	public SpaceWarningCommand(SpaceWarning sw) {
-        super("bungeespacewarning", "spacewarning.check", "bsw");
+        super("bungeespacewarning", "bungeespacewarning.usage", "bsw");
         
         this.sw = sw;
         
@@ -22,7 +22,7 @@ public class SpaceWarningCommand extends Command{
       
 		if(args.length <= 0){
 			
-			if(sender.hasPermission("spacewarning.check")){
+			if(sender.hasPermission("bungeespacewarning.check")){
 			
 				if(System.getProperty("os.name") != null){
 					sender.sendMessage(ChatColor.GREEN + "OS: " + System.getProperty("os.name").toString().toLowerCase());
@@ -49,7 +49,7 @@ public class SpaceWarningCommand extends Command{
 			
 			if(args[0].equalsIgnoreCase("silent")){
 				
-				if(sender.hasPermission("spacewarning.silent")){
+				if(sender.hasPermission("bungeespacewarning.silent")){
 				
 					boolean silent = Value.silents.contains(sender.getName());
 					
@@ -73,7 +73,7 @@ public class SpaceWarningCommand extends Command{
 				
 			}else if(args[0].equalsIgnoreCase("reload")){
 				
-				if(sender.hasPermission("spacewarning.reload")){
+				if(sender.hasPermission("bungeespacewarning.reload")){
 					
 					try {
 						
